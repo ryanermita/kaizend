@@ -9,6 +9,7 @@
 def tripleprint(value):
     for _ in range(3):
         print(value, end="")
+    return ''
 
 
 print(tripleprint("hello"))
