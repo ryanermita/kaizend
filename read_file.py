@@ -38,6 +38,7 @@ if __name__ == '__main__':
     )
     parser.add_argument(
         '-f', '--file',
+        required=True,
         help='file to read',
     )
     args = parser.parse_args()
