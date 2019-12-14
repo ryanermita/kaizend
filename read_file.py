@@ -14,8 +14,9 @@ def main(args):
     log.info('Hello world!')
     log.debug('This will only show on debug levels...')
     log.error('Something went wrong!')
-    if args.file:
-        with open(args.file, 'r') as f:
+
+    for file in args.file:
+        with open(file, 'r') as f:
             print(f.read())
 
 
@@ -39,10 +40,10 @@ if __name__ == '__main__':
     parser.add_argument(
         '-f', '--file',
         required=True,
-        help='file to read',
+        nargs='+',  # accept 1 or more files
+        help='file(s) to read',
     )
     args = parser.parse_args()
-
     # Configure logging
     log_params = {
         'filename': args.log_file,
