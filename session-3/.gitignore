@@ -1,11 +1,2 @@
-*.py[cod]
-__pycache__
-.python-version
-.ipynb_checkpoints
-
-*.tmp
-*.swp
-*~
-*.log
-*.sqlite3
+venv/
 .DS_Store
