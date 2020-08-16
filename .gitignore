@@ -1,4 +1,11 @@
 venv/
-.DS_Store
-lessons/
+.vscode/
 __pycache__/
+.mypy_cache/
+.pytest_cache/
+.coverage
+test-reports/
+htmlcov/
+lessons/
+.DS_Store
+
